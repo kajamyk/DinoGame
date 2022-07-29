@@ -93,9 +93,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="DinoSprites_doux.gif" />
-    <Content Include="HtmlPage1.html" />
-    <Content Include="JavaScript.js" />
-    <Content Include="StyleSheet1.css" />
+    <Content Include="MainPage.html" />
+    <Content Include="gameLogic.js" />
+    <Content Include="jumpingSound.wav" />
+    <Content Include="styleSheet.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
