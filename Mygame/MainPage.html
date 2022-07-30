@@ -8,7 +8,7 @@
 <body>
     <div id="game" onclick="jump();">
         <div id="character">
-            <img src="DinoSprites_doux.gif" width="50" height="50" />
+            <img id="defaultImage" src="Resources\DinoSprites_doux.gif" width="50" height="50" />
         </div>
         <div id="block"></div>
         <div id="title">
@@ -19,6 +19,17 @@
     <button onclick="startGame()" class="myButton">START</button>
     <button onclick="stopGame()" class="myButton">STOP</button>
     <button onclick="endGame()" class="myButton">END</button>
+    <br />
+    <img src="Resources/DinoSprites_mort.gif" width="50" height="50" />
+    <img src="Resources/DinoSprites_doux.gif" width="50" height="50" />
+    <img src="Resources/DinoSprites_tard.gif" width="50" height="50" />
+    <img src="Resources/DinoSprites_vita.gif" width="50" height="50" />
+    <br />
+    <button onclick="replaceImage('Resources/DinoSprites_mort.gif')" class="myButton">MORT</button>
+    <button onclick="replaceImage('Resources/DinoSprites_doux.gif')" class="myButton">DOUX</button>
+    <button onclick="replaceImage('Resources/DinoSprites_tard.gif')" class="myButton">TARD</button>
+    <button onclick="replaceImage('Resources/DinoSprites_vita.gif')" class="myButton">VITA</button>
 </body>
-<script src="gameLogic.js"></script>
+<script src="Game.js"></script>
+<script src="Character.js"></script>
 </html>

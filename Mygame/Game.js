@@ -1,19 +1,11 @@
 ﻿var character = document.getElementById("character");
 var block = document.getElementById("block");
 var losesParagraph = document.getElementById("losesParagraph");
+var imageId = document.getElementById("defaultImage");
+
 var loses = 0;
 var isDead = false;
 
-function jump() {
-    if (character.classList != "animate") {
-        character.classList.add("animate");
-        playAudio();
-    }
-    setTimeout(function () {
-        character.classList.remove("animate");
-    }, 500);
-   
-}
 
 var checkDead = setInterval(function () {
     var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
@@ -24,9 +16,12 @@ var checkDead = setInterval(function () {
     if (blockLeft > 40)
         if (isDead) {
             loses++;
-            console.log(loses);
             losesParagraph.innerHTML = "Loses : " + loses;
             isDead = false;
+            if (loses == 3) {
+                alert("You lost ;(");
+                endGame();
+            }  
         }
 }, 100);
 
@@ -42,10 +37,11 @@ function stopGame() {
 function endGame() {
     block.classList.remove("moveBlock");
     losesParagraph.innerHTML = "Loses : 0";
+    loses = 0;
 }
 
 function playAudio() {
-    var audio = new Audio('jumpingSound.wav');
+    var audio = new Audio('Resources/jumpingSound.wav');
     audio.play();
 }
 

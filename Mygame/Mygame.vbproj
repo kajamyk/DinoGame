@@ -92,10 +92,14 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DinoSprites_doux.gif" />
+    <Content Include="Character.js" />
+    <Content Include="Resources\DinoSprites_doux.gif" />
+    <Content Include="Resources\DinoSprites_mort.gif" />
+    <Content Include="Resources\DinoSprites_tard.gif" />
+    <Content Include="Resources\DinoSprites_vita.gif" />
     <Content Include="MainPage.html" />
-    <Content Include="gameLogic.js" />
-    <Content Include="jumpingSound.wav" />
+    <Content Include="Game.js" />
+    <Content Include="Resources\jumpingSound.wav" />
     <Content Include="styleSheet.css" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -129,7 +133,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ARCADECLASSIC.TTF" />
+    <Content Include="Resources\ARCADECLASSIC.TTF" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
